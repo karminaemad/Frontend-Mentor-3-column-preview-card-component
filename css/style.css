@@ -1,0 +1,119 @@
+:root{
+    --Brightorange:hsl(31, 77%, 52%);
+    --Darkcyan:hsl(184, 100%, 22%);
+    --Verydarkcyan:hsl(179, 100%, 13%);
+    --paragraphs:hsla(0, 0%, 100%, 0.75);
+    --background-headings-buttons: hsl(0, 0%, 95%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: var(--Verylightgray);
+    height: 100vh;
+    padding: 218px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .card{
+    height: 430px;
+}
+.card{
+    display: grid;
+    padding: 30px;
+    color: var(--paragraphs);
+}
+.container h1{
+    color: var(--background-headings-buttons);
+    font-family:"Big Shoulders Display", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.container p{
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+}
+.card button{
+    height: 43px;
+    width: 138px;
+    border-radius: 22px;
+    margin-top: 50px;
+    color: var(--background-headings-buttons);
+    border:none;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    cursor: pointer;
+} 
+.card button:hover{
+    border: solid 2px var(--background-headings-buttons);
+    color: var(--background-headings-buttons);
+}
+.card-1 button{
+    color: var(--Brightorange);
+}
+.card-1 button:hover{
+    background-color: var(--Brightorange);
+}
+.card-2 button{
+    color: var(--Darkcyan);
+}
+.card-2 button:hover{
+    background-color: var(--Darkcyan);
+}
+.card-3 button{
+    color: var(--Verydarkcyan);
+}
+.card-3 button:hover{
+    background-color: var(--Verydarkcyan);
+}
+.card-1{
+    background-color:var(--Brightorange);
+    border-radius:5px 0 0 5px;
+}
+.card-2{
+    background-color:var(--Darkcyan);
+}
+.card-3{
+    background-color:var(--Verydarkcyan);
+    border-radius: 0 5px 5px 0;
+}
+@media (max-width:375px) and (max-width:1440px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .container .card{
+        padding: 25px;
+        width: 230px;
+        flex-shrink: 0;
+        height: 320px;
+    }
+    .card h1{
+        padding-top: 15px;
+    }
+    .card p{
+        line-height: 20px;
+        font-size: 12px;
+        padding-top: 15px ;
+    }
+    .card button{
+        font-size: 12px;
+        margin-top: 15px;
+        height: 40px;
+        width: 130px;
+    }
+    .card-1{
+        border-radius: 5px 5px 0 0;
+    }
+    .card-3{
+        border-radius: 0 0 5px 5px;
+    }
+}
